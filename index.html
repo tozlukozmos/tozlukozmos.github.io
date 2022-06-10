@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/03d4743a57.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <title>tozlukozmos | jr. frontend developer</title>
+</head>
+
+<body>
+    <section class="insider">
+        <!-- navbar -->
+        <header class="navbar">
+            <!-- logo -->
+            <h1 class="logo">tozlukozmos.</h1>
+            <!-- menu -->
+            <nav class="menu-links" id="menu-links">
+                <a href="#home">home</a>
+                <a href="#projects">projects</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+            </nav>
+            <!-- hamburger menu -->
+            <section class="hamburger-menu">
+                <input id="hamburger-menu-icon" type="checkbox"/>
+                <label class="hamburger-menu-icon" for="hamburger-menu-icon"><span></span></label>
+                <!-- hamburger menu links -->
+                <nav class="hamburger-menu-links" id="hamburger-menu-links">
+                    <a href="#home">home</a>
+                    <a href="#projects">projects</a>
+                    <a href="#about">about</a>
+                    <a href="#contact">contact</a>
+                </nav>
+            </section>
+        </header>
+        <!-- context -->
+        <main class="context">
+            <!-- intro -->
+            <section class="intro" id="home">
+                <h2>HI, THERE</h2>
+                <h3>I am a jr. frontend developer</h3>
+                <p>I can build modern, responsive and problem solver web apps.</p>
+                <a href="#contact">contact me</a>
+            </section>
+            <!-- projects -->
+            <section class="projects" id="projects">
+                <!-- project -->
+                <article class="project">
+                    <h2 class="project-title">Socurity</h2>
+                    <p class="project-text">It is a fullstack social media web app. I have used Vue.js framework for
+                        frontend, Node.js for backend with Express.js to create a server, and MongoDB for database.
+                        Heroku have been used to deploy backend and Netlify have been used to deploy frontend.</p>
+                    <section class="project-buttons">
+                        <a href="https://socurity.netlify.app/#/" target="_blank">view <i
+                                class="fa-solid fa-eye"></i></a>
+                        <a href="https://github.com/tozlukozmos" target="_blank">source code</a>
+                    </section>
+                </article>
+                <!-- project -->
+                <article class="project">
+                    <h2 class="project-title">School Template</h2>
+                    <p class="project-text">It is a redesign version of the home page of Abdullah Gül University’s
+                        website. The main purpose of the project is improving usability, accesibility, and creating
+                        fully responsive HTML template by using css without any framework. Netlify have been used to
+                        deploy.</p>
+                    <section class="project-buttons">
+                        <a href="https://agu-website-redesign.netlify.app/" target="_blank">view <i
+                                class="fa-solid fa-eye"></i></a>
+                        <a href="https://github.com/tozlukozmos/agu-website-redesign" target="_blank">source code</a>
+                    </section>
+                </article>
+                <!-- project -->
+                <article class="project">
+                    <h2 class="project-title">Moviebox</h2>
+                    <p class="project-text">It is a basic movie HTML template designed by Adriana Eka Prayudha on Figma.
+                        The main purpose of the project is coding an already exist design made by someone else to
+                        practice working as a team, and testing my HTML and CSS skills by comparing actual design and
+                        coded design. Netlify have been used to deploy.</p>
+                    <section class="project-buttons">
+                        <a href="https://moviebox-template.netlify.app/" target="_blank">view <i
+                                class="fa-solid fa-eye"></i></a>
+                        <a href="https://github.com/tozlukozmos/moviebox-website-template" target="_blank">source
+                            code</a>
+                    </section>
+                </article>
+                <!-- see more -->
+                <a href="https://github.com/tozlukozmos" target="_blank">see more on GitHub <i
+                        class="fa-brands fa-github"></i></a>
+            </section>
+            <!-- about -->
+            <section class="about" id="about">
+                <section class="avatar"></section>
+                <section class="about-info">
+                    <h2>Abdulkadir Eyigül</h2>
+                    <h3>Jr. Frontend Developer</h3>
+                    <p>I have been working with frontend technologies for 2 years.</p>
+                    <section class="buttons">
+                        <a href="../assets/docs/abdulkadir-eyigul-cv.pdf" download>download cv <i
+                                class="fa-solid fa-download"></i></a>
+                        <a href="https://github.com/tozlukozmos" target="_blank"><i
+                                class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://twitter.com/tozlukozmos" target="_blank"><i
+                                class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/abdulkadir-eyig%C3%BCl/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    </section>
+                </section>
+            </section>
+            <!-- contact -->
+            <form method="post" class="contact" id="contact">
+                <!-- fullname -->
+                <section class="input-card">
+                    <label for="name">fullname</label>
+                    <input type="text" name="name" id="name" placeholder="John Smith" required>
+                </section>
+                <!-- email -->
+                <section class="input-card">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+                </section>
+                <!-- subject -->
+                <section class="input-card">
+                    <label for="subject">subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Collaboration, Suggestion,..." required>
+                </section>
+                <!-- message -->
+                <section class="message-card">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" placeholder="Hi, I would like to talk about..."
+                        required></textarea>
+                </section>
+                <!-- button -->
+                <button type="submit" id="send-button"><i class="fa-solid fa-paper-plane"></i> send message</button>
+                <!-- loading -->
+                <div class="loading" id="loading"></div>
+            </form>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <h3>© 2022 tozlukozmos.</h3>
+            <h3>design & coding by me</h3>
+        </footer>
+    </section>
+</body>
+
+</html>

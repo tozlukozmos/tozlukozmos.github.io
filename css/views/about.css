@@ -1,0 +1,70 @@
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+/* gettim bro */
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 2px solid var(--color-dark);
+    outline-offset: 2px;
+    background-image: url(../../assets/images/avatar.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-info {
+    text-align: center;
+}
+.about-info > h2 {
+    font-size: 18px;
+    line-height: 1;
+    color: var(--color-dark);
+    font-family: var(--font-secondary);
+}
+.about-info > h3 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    line-height: 1;
+    font-weight: bold;
+    color: var(--color-dark);
+}
+.buttons {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.buttons > a:first-child {
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-light);
+    background-color: var(--color-red);
+}
+.buttons > a:first-child:focus {
+    outline: 2px solid var(--color-red);
+    outline-offset: 2px;
+}
+.buttons > a:first-child:active {
+    background-color: var(--color-yellow);
+}
+.buttons > a {
+    color: var(--color-dark);
+    transition: color .2s;
+}
+.buttons > a:not(:first-child):focus {
+    color: var(--color-red);
+}
+.buttons > a:not(:first-child):active {
+    color: var(--color-yellow);
+}
+
+

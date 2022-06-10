@@ -1,0 +1,36 @@
+.intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro > h2 {
+    font-size: 24px;
+    font-family: var(--font-fourth);
+}
+.intro > h3 {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.intro > p {
+    max-width: 250px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.intro > a {
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-light);
+    background-color: var(--color-red);
+    transition: background-color .2s;
+}
+.intro > a:focus {
+    outline: 2px solid var(--color-red);
+    outline-offset: 2px;
+}
+.intro > a:active {
+    background-color: var(--color-yellow);
+}

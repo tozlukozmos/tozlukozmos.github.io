@@ -1,0 +1,10 @@
+:root {
+    --color-dark: #0d0d0d;
+    --color-light: #f1f1f1;
+    --color-red: #b5262b;
+    --color-yellow: #f2a74b;
+    --font-primary: 'Roboto Slab', serif;
+    --font-secondary: 'Palanquin Dark', sans-serif;
+    --font-tertiary: 'Sofia', cursive;
+    --font-fourth: 'Tourney', cursive;
+}

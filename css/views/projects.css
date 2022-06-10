@@ -1,0 +1,87 @@
+.projects {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.projects::-webkit-scrollbar {
+    display: none;
+}  
+/* Hide scrollbar for IE, Edge and Firefox */
+.projects {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.project {
+    width: clamp(300px, 100%, 450px);
+    height: max-content;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+.project-title {
+    font-size: 18px;
+    line-height: 1;
+    color: var(--color-dark);
+    font-family: var(--font-secondary);
+}
+.project-buttons {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+.project-buttons > a:first-child {
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-light);
+    background-color: var(--color-red);
+}
+.project-buttons > a:first-child:focus {
+    outline: 2px solid var(--color-red);
+    outline-offset: 2px;
+}
+.project-buttons > a:first-child:active {
+    background-color: var(--color-yellow);
+}
+.project-buttons > a {
+    color: var(--color-dark);
+    transition: background-color .2s;
+}
+.project-buttons > a:not(:first-child):focus {
+    color: var(--color-red);
+}
+.project-buttons > a:not(:first-child):active {
+    color: var(--color-yellow);
+}
+.projects > a {
+    margin-left: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px 10px;
+    flex: 0 0 auto;
+    display: block;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid var(--color-red);
+    color: var(--color-red);
+    transition: color .2s, border .2s;
+}
+.projects > a:focus {
+    outline: 2px solid var(--color-red);
+    outline-offset: 2px;
+}
+.projects > a:active {
+    border: 2px solid var(--color-yellow);
+    color: var(--color-yellow);
+}

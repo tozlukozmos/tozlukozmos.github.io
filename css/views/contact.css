@@ -8,6 +8,20 @@
     justify-content: center;
     gap: 16px;
 }
+@media screen and (max-width: 500px) {
+    .contact {
+        overflow-y: scroll;
+    }
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.contact::-webkit-scrollbar {
+    display: none;
+}  
+/* Hide scrollbar for IE, Edge and Firefox */
+.contact {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 .input-card,
 .message-card {
     width: 100%;

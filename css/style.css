@@ -71,7 +71,8 @@
 }
 
 #hamburger-menu-icon {
-    opacity: 0;
+    transform: translate(-200px, -200px);
+    user-select: none;
 }
 
 #hamburger-menu-icon:checked+.hamburger-menu-icon>span {
